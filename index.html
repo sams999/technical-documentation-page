@@ -7,11 +7,9 @@
     <title>HTML Basics Technical Documentation Page</title>
   </head>
   <body>
-    <!--Nav Bar-->
     <nav id="navbar">
       <header class="center">Getting Started With HTML</header>
         <ul>
-          <!--Link each <a href""> to the corresponding <section> #id in #main-doc-->
           <li><a  class="nav-link"  href="#Introduction">Introduction</a></li>
           <li><a  class="nav-link" href="#What_is_HTML?">What is HTML?</a></li>
           <li><a class="nav-link"  href="#Images">Images</a></li>
@@ -20,14 +18,9 @@
           <li><a  class="nav-link" href="#Conclusion">Conclusion</a></li>
           <li><a  class="nav-link" href="#Reference">Reference</a></li>
         </ul>
-    </nav>
-   
-    <!--Main--> 
+      </nav>
     <main id="main-doc">
-     <!-- make multiple sections -->
-     <!--create an #id for each section so you can link it to the <a>'s in the navbar-->
       <section class="main-section" id="Introduction">
-      <!--each main section should have a header-->
         <header class="underline bold">Introduction</header>
         <article>
           <p>
@@ -38,32 +31,22 @@
           </p>
         </article>
       </section>
-
       <section class="main-section" id="What_is_HTML?">
         <header class="underline bold">What is HTML?</header>
         <article>
           <p>HTML, which stands for HyperText Markup Language, is a markup language used to define the structure of web page content. It consists of a series of elements that enclose different parts of the content and specify their presentation and behavior. By using enclosing tags, you can transform text, images, and other elements on your page. Let's explore an example to illustrate this:</p>
-          
           <p>Consider the following line of content:</p>
-
           <code>I love coding!</code>
-
           <p>To indicate that this line is a paragraph, we can enclose it with paragraph tags:</p>
-
-          <p>HTML:</p>
-          
+          <p class="smaller-text">HTML:</p>
           <code>&lt;p&gt;I love coding!&lt;/p&gt;
           </code>
-
           <p class="underline">Anatomy of an HTML Element</p>
-
           <p>Let's examine the components of an HTML element using the example of a paragraph element:</p>
-
+          <p class="smaller-text">HTML:</p>
           <code>&lt;p&gt;I love coding!&lt;/p&gt;
           </code>
-
           <p>The essential parts of this element include:</p>
-
           <ol>
             <li><span class="underline bold">Opening Tag:</span> It marks the beginning of the element and is enclosed in angle brackets (< and >). In this case, the opening tag for a paragraph element is &lt;p&gt;.
             </li>
@@ -79,45 +62,27 @@
           </ol>
             <p>
               Elements can also have attributes, providing additional information about the element. Attributes are defined within the opening tag and consist of a name-value pair. Let's see an example:</p>
-            
-            <p>HTML:</p>
-
+            <p class="smaller-text">HTML:</p>
             <code>&lt;a href="https://www.example.com"&gt;Visit Example Website&lt;/a&gt;
             </code>
-          
             <p>In this case, the `&lt;a&gt;` element represents a hyperlink, and the `href` attribute specifies the URL it links to.
             </p>
-            
             <p class="underline">Nesting Elements</p>
-
             <p>HTML allows elements to be nested inside one another, creating a hierarchical structure. Let's consider an example where we want to emphasize a word within a paragraph:</p>
-
-            <p>HTML:</p>
-
+            <p class="smaller-text">HTML:</p>
             <code>&lt;p&gt;I &lt;strong&gt;<strong>strongly</strong>&lt;strong&gt; recommend learning HTML.&lt;/p&gt;
             </code>
-
             <p>In the above example, the `&lt;strong&gt;` element is nested within the paragraph element (`&lt;p&gt;`), highlighting the word "strongly."</p>
-
             <p>Proper nesting is crucial to ensure elements are correctly opened and closed in the right order.</p>
-
             <p class="underline">Void Elements</p>
-
             <p>Some elements in HTML are void elements, meaning they don't have a closing tag and don't contain any content. An example is the <br> element used to insert line breaks:</p>
-
-            <p>HTML:</p>
-
+            <p class="smaller-text">HTML:</p>
             <code>&lt;p&gt;This is the first line.&lt;br&gt;This is the second line.&lt;/p&gt;
             </code>
-
             <p>In the above code, the `&lt;br&gt;` element inserts a line break within the paragraph.</p>
-
             <p class="underline">Anatomy of an HTML Document</p>
-
             <p>Let's examine the structure of a basic HTML document:</p>
-
-            <p>HTML:</p>
-
+            <p class="smaller-text">HTML:</p>
             <code class="white-space">&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
   &lt;head&gt;
@@ -132,114 +97,76 @@
     &lt;p&gt;This is a sample paragraph.&lt;/p&gt;
   &lt;/body&gt;
 &lt;/html&gt;</code>
-          
-          <p>The HTML document consists of several elements:</p>
-
-          <ul>
-            <li><span class="bold">&lt;!DOCTYPE html&gt;:</span> This declaration specifies the HTML version being used.</li>
-            <li><span class="bold">&lt;html&gt;&lt;/html&gt;:</span> The root element that encloses the entire HTML content.</li>
-            <li><span class="bold">&lt;head&gt;&lt;/head&gt;:</span> This element contains meta-information, stylesheets, scripts, and the document title.</li>
-            <li><span class="bold">&lt;title&gt;&lt;/title&gt;:</span> It sets the title of the web page.</li>
-            <li><span class="bold">&lt;meta charset="utf-8"&gt;:</span> This element specifies the character encoding for the document.</li>
-            <li><span class="bold">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;:</span> The viewport element in HTML ensures that web pages are displayed correctly on mobile devices. It sets the page width to match the viewport width, preventing mobile browsers from rendering pages wider than the viewport and then scaling them down.</li>
-            <li><span class="bold">&lt;link rel="stylesheet" href="styles.css"&gt;:</span> It links an external CSS file to style the HTML content.</li>
-            <li><span class="bold">&lt;script src="script.js"&gt;&lt;/script&gt;:</span> This element includes an external JavaScript file.</li>
-            <li><span class="bold">&lt;body&gt;&lt;/body&gt;:</span> The body element contains the visible content of the web page.</li>
+            <p>The HTML document consists of several elements:</p>
+            <ul>
+              <li><span class="bold">&lt;!DOCTYPE html&gt;:</span> This declaration specifies the HTML version being used.</li>
+              <li><span class="bold">&lt;html&gt;&lt;/html&gt;:</span> The root element that encloses the entire HTML content.</li>
+              <li><span class="bold">&lt;head&gt;&lt;/head&gt;:</span> This element contains meta-information, stylesheets, scripts, and the document title.</li>
+              <li><span class="bold">&lt;title&gt;&lt;/title&gt;:</span> It sets the title of the web page.</li>
+              <li><span class="bold">&lt;meta charset="utf-8"&gt;:</span> This element specifies the character encoding for the document.</li>
+              <li><span class="bold">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;:</span> The viewport element in HTML ensures that web pages are displayed correctly on mobile devices. It sets the page width to match the viewport width, preventing mobile browsers from rendering pages wider than the viewport and then scaling them down.</li>
+              <li><span class="bold">&lt;link rel="stylesheet" href="styles.css"&gt;:</span> It links an external CSS file to style the HTML content.</li>
+              <li><span class="bold">&lt;script src="script.js"&gt;&lt;/script&gt;:</span> This element includes an external JavaScript file.</li>
+              <li><span class="bold">&lt;body&gt;&lt;/body&gt;:</span> The body element contains the visible content of the web page.</li>
           </ul>
-
           <p>By combining these elements, you can create well-structured and interactive web pages using HTML.</p>
-        
         </article>
       </section>
-
       <section class="main-section" id="Images">
         <header class="underline bold">Images</header>
         <article>
-          
           <p>Let us take a look at the &lt;img&gt; element.</p>
-
-          <p>HTML:</p>
-
+          <p class="smaller-text">HTML:</p>
           <code>&lt;img src="images/my-test-image.png" alt="test" /&gt;</code>
-
           <p>The `&lt;img&gt;` element in HTML is used to embed an image into a web page. It uses the src attribute to specify the path to the image file. Additionally, the alt attribute is included to provide alternative text for users who cannot see the image.</p>
-
           <img src="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/HTML_basics/alt-text-example.png" />
-          
           <p>The alternative text, or alt text, serves two main purposes. 
-            <ol>
-              <li>First, it is read aloud by screen readers for visually impaired users.</li> <li>Second, it is displayed when the image fails to load. It is important to provide descriptive alt text that conveys the meaning or content of the image.</li>
-            </ol>
+          <ol>
+            <li>First, it is read aloud by screen readers for visually impaired users.</li> <li>Second, it is displayed when the image fails to load. It is important to provide descriptive alt text that conveys the meaning or content of the image.</li>
+          </ol>
           </p>
-
-          
-          
           <p>In the example provided, the alt text "test" is not sufficient. A more appropriate alt text for the image could be "White box with the text: 'My test image'".</p>
-
           <p>This alt text provides a more descriptive and accurate representation of the image. It clearly mentions that the image is a white box with the specific text "My test image" displayed on it. By including the quotation marks around the text, it conveys that the text is part of the image itself.</p>
-          
           <p>Using this alt attribute will ensure that users who cannot see the image, whether due to visual impairments or other reasons, can understand the content and context of the image.
           </p>
-          
         </article>
       </section>
-
       <section class="main-section" id="Mark_up_text">
         <header class="underline bold">Mark up text</header>
         <article>
-
           <p>In this section, we will delve into important HTML elements that are fundamental for marking up text.</p>
-
           <p class="bold underline">Headings</p>
-
           <p>Heading elements allow you to designate certain parts of your content as headings or subheadings, mirroring the structure of titles, chapters, and subtitles in a book. HTML provides six heading levels, `&lt;h1&gt;` to `&lt;h6&gt;`, although in practice, you typically use only three to four levels at most.</p>
-
           <p>HTML heading elements (`&lt;h1&gt;` to `&lt;h6&gt;`) provide a hierarchy of headings, ranging from the highest level (`&lt;h1&gt;`) for main titles to the lowest level (`&lt;h6&gt;`) for minor subheadings, allowing for structured organization of content.</p>
-
           <p>Additionally, the font size of HTML heading elements decreases as the heading level increases, with `&lt;h1&gt;` being the largest and `&lt;h6&gt;` being the smallest. Each page should contain no more than one `&lt;h1&gt;` elements, but subheadings (`&lt;h2&gt;` through `&lt;h6&gt;`)  may be used multiple times per page. </p>
-          
-
-          <p>HTML:</p>          
+          <p class="smaller-text">HTML:</p>          
           <code>4 heading levels: 
 &lt;h1&gt; Main title &lt;/h1&gt;
 &lt;h2&gt; Top level heading &lt;/h2&gt;
 &lt;h3&gt; Subheading &lt;/h3&gt;
 &lt;h4&gt; Sub-subheading &lt;/h4&gt;</code>
-
           <p class="bold underline">Paragraphs</p>
-
           <p>The `&lt;p&gt;` element in HTML is used to create paragraphs of text on a webpage. It acts as a container that wraps around a block of text, allowing us to structure and separate our content into meaningful paragraphs. By enclosing our sentences or paragraphs within `&lt;p&gt;` tags, we can control the spacing and formatting of the text, making it easier to read and understand.</p>
-
-          <p>HTML:</p>
-
+          <p class="smaller-text">HTML:</p>
           <code>&lt;p&gt; This is a single paragraph &lt;/p&gt;
           </code>
-
           <p class="bold underline">Lists</p>
-          
           <p>Lists are a common way to present information on the web, and HTML provides special elements to structure lists. When working with lists, we need at least two elements. The two main list types are unordered and ordered lists.</p>
-
           <p>Unordered lists are used when the order of the items doesn't matter, such as a shopping list. These lists have bullet points to mark each item. To create an unordered list, we wrap the list items in a `&lt;ul&gt;` element.</p>
-            
           <p>Ordered lists are used when the order of the items does matter, such as a set of instructions. These lists are numbered to indicate the order of the items. To create an ordered list, we wrap the list items in an `&lt;ol&gt;` element.</p>
-            
           <p>Each item in the list is marked with an `&lt;li&gt;` (list item) element, which represents a single item in the list. With unordered lists, bullet points are automatically added, while ordered lists display numbers for each item, indicating their sequence.</p>
-
           <p>For example, if we wanted to convert the following paragraph fragment into a list:</p>
-
+          <p class="smaller-text">HTML:</p>
           <code>&lt;p&gt; The United States Federal Government is comprised of the Executive branch, Judicial branch, and the Legislative branch...&lt;/p&gt;</code>
-
           <p>We could modify the mark up to this:</p>
-
+          <p class="smaller-text">HTML:</p>
           <code class="white-space">&lt;p&gt; The United States Federal Government is comprised of the &lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt; Executive branch  &lt;/li&gt;
   &lt;li&gt; Judicial branch &lt;/li&gt;
   &lt;li&gt; Legislative branch &lt;/li&gt;
 &lt;/ul&gt;</code>
-
           <p>Which would result in an unordered list which looked like this:</p>
-
           <div class="smaller-text">
             <p>The United States Federal Government is comprised of the</p>
             <ul>
@@ -248,18 +175,15 @@
               <li>Legislative branch</li>
             </ul>
           </div>
-
-          <p>If we wanted a numbered list, we would use an ordered list like this:</p>
-
+           <p>If we wanted a numbered list, we would use an ordered list like this:</p>
+           <p class="smaller-text">HTML:</p>
           <code class="white-space">&lt;p&gt; The United States Federal Government is comprised of the &lt;/p&gt;
-&lt;ol&gt;
-  &lt;li&gt; Executive branch  &lt;/li&gt;
-  &lt;li&gt; Judicial branch &lt;/li&gt;
-  &lt;li&gt; Legislative branch &lt;/li&gt;
-&lt;/ol&gt;</code>
-
+  &lt;ol&gt;
+    &lt;li&gt; Executive branch  &lt;/li&gt;
+    &lt;li&gt; Judicial branch &lt;/li&gt;
+    &lt;li&gt; Legislative branch &lt;/li&gt;
+  &lt;/ol&gt;</code>
           <p>Which would give us an ordered list like this:</p>
-
           <div class="smaller-text">
             <p>The United States Federal Government is comprised of the</p>
             <ol>
@@ -270,52 +194,31 @@
           </div>
        </article>
       </section>
-
       <section class="main-section" id="Links">
         <header class="underline bold">Links</header>
-      
         <p>HTML links, also known as hyperlinks, are elements that allow users to navigate between web pages. When a user clicks on a link, it triggers an action that directs the browser to load the linked page.</p> 
-        
         <p>Links are created using the &lt;a&gt; element, where the href attribute specifies the URL (Uniform Resource Locator) of the destination page.</p> 
-        
         <p>The href attribute stands for "Hypertext Reference" and provides the address or location of the linked resource.</p> 
-        
         <p>To create a link, you enclose the link text or other elements within the &lt;a&gt; tags and set the href attribute to the desired URL.</p> 
-        
         <p>For example:</p> 
-        
+        <p class="smaller-text">HTML:</p>
         <code id="shiftRight">&lt;a href="https://example.com"&gt;Click here&lt;/a&gt;</code> 
-        
         <p>creates a link that displays "Click here" and leads to the "https://example.com" webpage when clicked.</p>
-
         <p>To learn more about hyperlinks, <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks" id="mdn-link" target="_blank">Click here</a>.</p>
       </section>
-
       <section class="main-section" id="Conclusion">
         <header class="underline bold">Conclusion</header>
-
         <p>In conclusion, mastering the basics of HTML is crucial for web development. By understanding elements such as headings, paragraphs, lists, and links, you gain the ability to create well-structured and engaging web pages. HTML forms the foundation for designing and presenting content effectively on the web.</p>
-
         <p>Headings allow you to establish a hierarchy and emphasize important sections, while paragraphs provide a means to convey clear and concise textual information.</p>
-
         <p> Lists offer a way to present information in an organized and visually appealing manner, whether through bullet points or numbered format.</p>
-
         <p>Moreover, links play a vital role in facilitating seamless navigation between web pages, enhancing the user experience.</p> 
-        
         <p>With a strong grasp of HTML, you unlock endless possibilities for designing captivating and interactive websites.</p>
-
-
       </section>
-
       <section class="main-section" id="Reference">
         <header class="underline bold">Reference</header>
         <p class="moveUp"><a id="mdnLink" href="https://developer.mozilla.org/en-US/" target="_blank" >Mozilla Developer Network</a></p>
       </section>
-
-
       <p id="backToTop" class="center"><a class="no-underline" href="#Introduction">Back to the Top</a>.</p>
-
-        
     </main>
   </body>
 </html>
