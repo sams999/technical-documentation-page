@@ -17,6 +17,7 @@ body {
   height: 100%;
   border-right: solid;
   border-color: rgba(0, 22, 22, 0.4);
+  overflow: hidden;
 }
 
 header {
