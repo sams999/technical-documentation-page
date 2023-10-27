@@ -219,6 +219,23 @@
         <p class="moveUp"><a id="mdnLink" href="https://developer.mozilla.org/en-US/" target="_blank" >Mozilla Developer Network</a></p>
       </section>
       <p id="backToTop" class="center"><a class="no-underline" href="#Introduction">Back to the Top</a>.</p>
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+          var backToTopLink = document.getElementById("backToTop");
+          var navbar = document.getElementById("navbar");
+          var introductionSection = document.getElementById("Introduction");
+      
+          backToTopLink.addEventListener("click", function(event) {
+            event.preventDefault();
+            if (window.innerWidth <= 815) {
+              navbar.scrollIntoView({ behavior: "smooth" });
+            } else {
+              introductionSection.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+      </script>
+      
     </main>
   </body>
 </html>
